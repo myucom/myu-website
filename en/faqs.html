@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 400) {
+                $(".navbar_wrapper").addClass("not_transparent");
+            } else {
+                $(".navbar_wrapper").removeClass("not_transparent");
+            }
+        });
+
+        $(document).ready(function() {
+            $('nav a[href^="#"]').on('click', function(e) {
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        $('.inner_page_section .panel-title a').on('click', function() {
+            $('a.collapsed').removeClass('collapsed');
+            $(this).addClass('collapsed');
+        });
+    </script>
+
+    <title>myU</title>
+</head>
+
+<body>
+    <div class="navbar_wrapper bg_color navbar_fixed_top">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="index.html"><img class="" src="images/logo_myu.png" alt="myU"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#aboutapp">ABOUT APP<span class="sr-only">(current)</span></a></li>
+                            <li><a href="index.html#testimonial">TESTIMONIALS</a></li>
+                            <li><a href="index.html#contactus">CONTACT US</a></li>
+                        </ul>
+
+                        <!--<span class="lang_link"> <a href="http://qa-cms.myu.co/myu/ar/">العربية</a></span>-->
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/" style="font-size:18px !important;">العربية</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_page_section">
+        <div class="container">
+            <div class="row">
+                <h1>Frequently Asked Questions</h1>
+                <p>This is a brief list of our most frequently asked questions. For further details or support please visit <a href="http://www.myu.co" target="_blank">www.myu.co</a> </p>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+          What is myU?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <strong>myU</strong> is a mobile app that allows students and educators to connect via sending reminders, creating discussions, all in social network-like experience that is safe, instant and private. The app makes it easy
+                                to connect with anyone in the school community, makes classes more interactive, and sharing fun. We envision a better empowered education through technology.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How much does it cost?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                $0.00 - available for free in the Apple App Store and Google Play store.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How did the idea come about?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                We’ve all faced trouble with communications at school or as students at some point in our life, we thought it’s about time we do something about it. Technology is changing the world and enhancing our experiences, we thought of creating a tool that adds
+                                to education and makes it interesting through:
+                                <ul>
+                                    <li>Instant Communication</li>
+                                    <li>Engagement</li>
+                                    <li>Interactivity</li>
+                                    <li>And the main ingredient FUN!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          What other services are you compatible with?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Our app is currently Twitter, Facebook friendly you can share your profile with colleagues or students and much more!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          How can we partner with you?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                If you’re an organization looking to push to partner with us all you have to do is visit <a href="http://www.myU.co" target="_blank">www.myU.co</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          I have a technical problem or support issue I need resolved, who do I email?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                It’s best to visit <a href="http://www.myU.co" target="_blank">www.myU.co</a> for any technical problem.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          How does privacy work?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body">
+                                Your engagement on my is completely safe and private.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEight">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          Who can see my profile?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                            <div class="panel-body">
+                                Only students and professors within your school community are able to see your profile.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingNine">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          Can I share files?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                            <div class="panel-body">
+                                Currently you can share images and voice notes, sharing files will be available on a later stage of development.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          Is myU App available on the web?
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                            <div class="panel-body">
+                                Good news! We are currently working on a new design for the app, it provides you with a better feel and more functionality through access via web.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="myu_footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="https://twitter.com/MyU_app" target="_blank" class="margin_l30"><img src="images/twitter-logo-silhouette.svg" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/myuappsocial" target="_blank" class="margin_l30"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/myu_app/" target="_blank" class="margin_l30"><img src="images/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC6L-ghpIIDeHxSjgaO-4QmA" target="_blank" class="margin_l30"><img src="images/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="footer_links">
+			    <a href="aboutus.html">ABOUT US</a> |
+                            <a href="faqs.html">FAQS</a> |
+                            <a href="temsofservice.html">TERMS OF SERVICE</a> |
+                            <a href="privacypolicy.html">PRIVACY POLICY</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy_text">MyU &copy; Copyright 2016 | All Rights</div>
+        </div>
+    </footer>
+</body>
+
+</html>

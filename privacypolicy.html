@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 400) {
+                $(".navbar_wrapper").addClass("not_transparent");
+            } else {
+                $(".navbar_wrapper").removeClass("not_transparent");
+            }
+        });
+
+        $(document).ready(function() {
+            $('nav a[href^="#"]').on('click', function(e) {
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        $('.inner_page_section .panel-title a').on('click', function() {
+            $('a.collapsed').removeClass('collapsed');
+            $(this).addClass('collapsed');
+        });
+    </script>
+
+    <title>myU</title>
+</head>
+
+<body>
+    <div class="navbar_wrapper bg_color navbar_fixed_top">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="index.html"><img class="" src="images/logo_myu.png" alt="myU"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#contactus">اتصل بنا </a></li>
+                            <li><a href="index.html#testimonial">الشهادات </a></li>
+                            <li><a href="index.html#aboutapp">عن التطبيق <span class="sr-only">(current)</span></a></li>
+                        </ul>
+
+                        <!--<span class="lang_link"> <a href="http://qa-cms.myu.co/myu/en/">English</a></span>-->
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/en/">English</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <h1>Privacy Policy of myU app</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_page_section">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    <!--<img src="images/privacy.png" alt="privacy">-->Privacy Policy</h1>
+                <p>This privacy policy governs your use of the software application myU ("Application") for mobile devices that was created by Fikra Design and Management. The Application is a social network for college students.
+                </p>
+
+                <div class="text_block">
+                    <h2>What information does the Application obtain and how is it used?</h2>
+                    <p>User Provided Information. The Application obtains the information you provide when you download and register the Application. Registration with us is optional. However, please keep in mind that you may not be able to use some of the
+                        features offered by the Application unless you register with us.</p>
+                    <p>When you register with us and use the Application, you generally provide:</p>
+                    <ul type="a">
+                        <li>your name, email address, age, user name, password and other registration information; </li>
+                        <li>transaction-related information, such as when you make purchases, respond to any offers, or download or use applications from us; </li>
+                        <li>information you provide us when you contact us for help; </li>
+                        <li>credit card information for purchase and use of the Application, and; </li>
+                        <li>information you enter into our system when using the Application, such as contact information and project management information.</li>
+                    </ul>
+                    <p>We may also use the information you provided us to contact your from time to time to provide you with important information, required notices and marketing promotions.
+                    </p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Automatically Collected Information</h2>
+                    <p>In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating
+                        system, the type of mobile Internet browsers you use, and information about the way you use the Application.</p>
+                </div>
+
+
+                <div class="text_block">
+                    <h2>Does the Application collect precise real time location information of the device?</h2>
+                    <p>This Application does not collect precise information about the location of your mobile device.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Do third parties see and/or have access to information obtained by the Application?</h2>
+                    <p>Only aggregated, anonymized data is periodically transmitted to external services to help us improve the Application and our service. We will share your information with third parties only in the ways that are described in this privacy
+                        statement.</p>
+                    <p>We may disclose User Provided and Automatically Collected Information:</p>
+                    <ul>
+                        <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+                        <li>when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+                        <li>with our trusted services providers who work on our behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+                        <li>with the institution administration, when the database and network ownership is transferred to them</li>
+                        <li>if Fikra Design and Management is involved in a merger, acquisition, or sale of all or a portion of its assets, you will be notified via email and/or a prominent notice on our Web site of any change in ownership or uses of this
+                            information, as well as any choices you may have regarding this information.</li>
+                    </ul>
+                </div>
+
+
+                <div class="text_block">
+                    <h2>What are my opt-out rights?</h2>
+                    <p>You can stop all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace
+                        or network. You can also request to opt-out via email, at <a href="mailto:info@myu.co">info@myu.co</a>.
+                    </p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Data Retention Policy, Managing Your Information</h2>
+                    <p>We will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. We will retain Automatically Collected information for up to 1 year and thereafter may store it in aggregate. If you’d like
+                        us to delete User Provided Data that you have provided via the Application, please contact us at <a href="mailto:info@myu.co">info@myu.co</a> and we will respond in a reasonable time. Please note that some or all of the User Provided
+                        Data may be required in order for the Application to function properly.
+                    </p>
+                </div>
+
+
+                <div class="text_block">
+                    <h2>Children</h2>
+                    <p>We do not use the Application to knowingly solicit data from or market to children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should
+                        contact us at <a href="mailto:info@myu.co">info@myu.co</a>. We will delete such information from our files within a reasonable time.</p>
+                </div>
+
+
+                <div class="text_block">
+                    <h2>Security</h2>
+                    <p>We are concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect information we process and maintain. For example, we limit access to this information
+                        to authorized employees and contractors who need to know that information in order to operate, develop or improve our Application. Please be aware that, although we endeavor provide reasonable security for information we process
+                        and maintain, no security system can prevent all potential security breaches.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Changes</h2>
+                    <p>This Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval
+                        of all changes.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Your Consent</h2>
+                    <p>By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing" means using cookies on a computer/hand held device or using or touching information
+                        in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information, all of which activities will take place in the Kuwait. If you reside outside the Kuwait your information will
+                        be transferred, processed and stored there under Kuwait privacy standards.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Contact us</h2>
+                    <p>If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at <a href="mailto:info@myu.co">info@myu.co</a>.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="myu_footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="https://twitter.com/MyU_app" target="_blank" class="margin_l30"><img src="images/twitter-logo-silhouette.svg" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/myuappsocial" target="_blank" class="margin_l30"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/myu_app/" target="_blank" class="margin_l30"><img src="images/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC6L-ghpIIDeHxSjgaO-4QmA" target="_blank" class="margin_l30"><img src="images/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="footer_links">
+                            <a href="faqs.html" dir="rtl">الأسئلة الأكثر شيوعا</a> |
+                            <a href="temsofservice.html" dir="rtl">شروط الخدمة</a> |
+                            <a href="privacypolicy.html" dir="rtl">سياسة الخصوصية</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy_text" dir="rtl">ماي يو &copy; حقوق التأليف والنشر 2016 | كل الحقوق محفوظة</div>
+        </div>
+    </footer>
+</body>
+
+</html>

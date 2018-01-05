@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 400) {
+                $(".navbar_wrapper").addClass("not_transparent");
+            } else {
+                $(".navbar_wrapper").removeClass("not_transparent");
+            }
+        });
+
+        $(document).ready(function() {
+            $('nav a[href^="#"]').on('click', function(e) {
+                var target = this.hash;
+                var $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        $('.inner_page_section .panel-title a').on('click', function() {
+            $('a.collapsed').removeClass('collapsed');
+            $(this).addClass('collapsed');
+        });
+    </script>
+
+    <title>myU</title>
+</head>
+
+<body>
+    <div class="navbar_wrapper bg_color navbar_fixed_top">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="index.html"><img class="" src="images/logo_myu.png" alt="myU"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#aboutapp">ABOUT APP<span class="sr-only">(current)</span></a></li>
+                            <li><a href="index.html#testimonial">TESTIMONIALS</a></li>
+                            <li><a href="index.html#contactus">CONTACT US</a></li>
+                        </ul>
+                        <!--<span class="lang_link"> <a href="http://qa-cms.myu.co/myu/ar/">العربية</a></span>-->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/" style="font-size:18px !important;">العربية</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <h1>Terms and Conditions of Use of myU app</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_page_section">
+        <div class="container">
+            <div class="row">
+                <h1>Terms and Conditions of Use of myU app</h1>
+
+                <div class="text_block">
+                    <h2>Acceptance The Use Of myU app Terms and Conditions </h2>
+                    <p>Your access to and use of <strong>myU</strong> app is subject exclusively to these Terms and Conditions. You will not use the app for any purpose that is unlawful or prohibited by these Terms and Conditions. By using the app you are
+                        fully accepting the terms, conditions and disclaimers contained in this notice. If you do not accept these Terms and Conditions you must immediately stop using the app.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Credit card details</h2>
+                    <p><strong>myU</strong> app will never ask for Credit Card details and request that you do not enter it on any of the forms on myU app.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Advice</h2>
+                    <p>The contents of <strong>myU</strong> app do not constitute advice and should not be relied upon in making or refraining from making, any decision.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Change of Use</h2>
+                    <p><strong>myU</strong> app reserves the right to:</p>
+                    <ol>
+                        <li>change or remove (temporarily or permanently) the app or any part of it without notice and you confirm that myU app shall not be liable to you for any such change or removal and</li>
+                        <li>change these Terms and Conditions at any time, and your continued use of the app following any changes shall be deemed to be your acceptance of such change</li>
+                    </ol>
+                </div>
+
+                <div class="text_block">
+                    <h2>Links to Third Party Websites</h2>
+                    <p><strong>myU</strong> app may include links to third party websites that are controlled and maintained by others. Any link to other websites is not an endorsement of such websites and you acknowledge and agree that we are not responsible
+                        for the content or availability of any such sites.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Copyright</h2>
+                    <ol>
+                        <li>All copyright, trade marks and all other intellectual property rights in the app and its content (including without limitation the app design, text, graphics and all software and source codes connected with the app) are owned by
+                            or licensed to myU app or otherwise used by <strong>myU</strong> app as permitted by law.</li>
+                        <li>In accessing the app you agree that you will access the content solely for your personal, non-commercial use. None of the content may be downloaded, copied, reproduced, transmitted, stored, sold or distributed without the prior
+                            written consent of the copyright holder. This excludes the downloading, copying and/or printing of pages of the app for personal, non-commercial home use only.</li>
+                    </ol>
+                </div>
+
+                <div class="text_block">
+                    <h2>Disclaimers and Limitation of Liability</h2>
+                    <ol>
+                        <li>The app is provided on an AS IS and AS AVAILABLE basis without any representation or endorsement made and without warranty of any kind whether express or implied, including but not limited to the implied warranties of satisfactory
+                            quality, fitness for a particular purpose, non-infringement, compatibility, security and accuracy.</li>
+                        <li>To the extent permitted by law, myU app will not be liable for any indirect or consequential loss or damage whatever (including without limitation loss of business, opportunity, data, profits) arising out of or in connection with
+                            the use of the app.</li>
+                        <li><strong>myU</strong> app makes no warranty that the functionality of the app will be uninterrupted or error free, that defects will be corrected or that the app or the server that makes it available are free of viruses or anything
+                            else which may be harmful or destructive.</li>
+                        <li>Nothing in these Terms and Conditions shall be construed so as to exclude or limit the liability of <strong>myU</strong> app for death or personal injury as a result of the negligence of myU app or that of its employees or agents.</li>
+                    </ol>
+                </div>
+
+                <div class="text_block">
+                    <h2>Indemnity</h2>
+                    <p>You agree to indemnify and hold myU app and its employees and agents harmless from and against all liabilities, legal fees, damages, losses, costs and other expenses in relation to any claims or actions brought against <strong>myU</strong>                        app arising out of any breach by you of these Terms and Conditions or other liabilities arising out of your use of this app.</p>
+                </div>
+
+                <div class="text_block">
+                    <h2>Severance</h2>
+                    <p>If any of these Terms and Conditions should be determined to be invalid, illegal or unenforceable for any reason by any court of competent jurisdiction then such Term or Condition shall be severed and the remaining Terms and Conditions
+                        shall survive and remain in full force and effect and continue to be binding and enforceable.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="myu_footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="https://twitter.com/MyU_app" target="_blank" class="margin_l30"><img src="images/twitter-logo-silhouette.svg" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/myuappsocial" target="_blank" class="margin_l30"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/myu_app/" target="_blank" class="margin_l30"><img src="images/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC6L-ghpIIDeHxSjgaO-4QmA" target="_blank" class="margin_l30"><img src="images/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="footer_links">
+			    <a href="aboutus.html">ABOUT US</a> |
+                            <a href="faqs.html">FAQS</a> |
+                            <a href="temsofservice.html">TERMS OF SERVICE</a> |
+                            <a href="privacypolicy.html">PRIVACY POLICY</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy_text">MyU &copy; Copyright 2016 | All Rights</div>
+        </div>
+    </footer>
+</body>
+
+</html>

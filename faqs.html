@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 400) {
+                $(".navbar_wrapper").addClass("not_transparent");
+            } else {
+                $(".navbar_wrapper").removeClass("not_transparent");
+            }
+        });
+
+        $(document).ready(function() {
+            $('nav a[href^="#"]').on('click', function(e) {
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        $('.inner_page_section .panel-title a').on('click', function() {
+            $('a.collapsed').removeClass('collapsed');
+            $(this).addClass('collapsed');
+        });
+    </script>
+
+    <title>myU</title>
+</head>
+
+<body>
+    <div class="navbar_wrapper bg_color navbar_fixed_top">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="index.html"><img class="" src="images/logo_myu.png" alt="myU"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#contactus">اتصل بنا </a></li>
+                            <li><a href="index.html#testimonial">الشهادات </a></li>
+                            <li><a href="index.html#aboutapp">عن التطبيق <span class="sr-only">(current)</span></a></li>
+                        </ul>
+
+                        <!--<span class="lang_link"> <a href="http://qa-cms.myu.co/myu/en/">English</a></span>-->
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/en/">English</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_page_section">
+        <div class="container">
+            <div class="row">
+                <h1 dir="rtl">
+                    <!--<img src="images/faq_icon.png" alt="faq">-->الأسئلة المتكررة</h1>
+                <p dir="rtl">هذه لائحة مختصرة لأهم الأسئلة المتكررة. للمزيد من المعلومات او الدعم يرجى التواصل معنا على <a href="mailto:info@myu.co">info@myu.co</a> </p>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title" dir="rtl">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+         ما هو ماي يو؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body" dir="rtl">
+                                ما يو تطبيق للموبايل يمكن الطلبة والمعلمين من التواصل لإرسال الإعلانات، المذكرات وانشاء النقاشات، كل هذا في تجربة مماثلة لشبكات التواصل الاجتماعي بشكل آمن، فوري ويضمن الخصوصية. التطبيق يجعل من التواصل مع أي فرد من افراد الدائرة الدراسية امر سهل وتصبح
+                                الصفوف الدراسية أكثر تفاعلا ومتعة. تصورنا هو تمكين التعليم عبر التكنولوجيا.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         ما هي تكلفة التطبيق؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body" dir="rtl">
+                                لتطبيق متوفر مجانا على كلا من متجر أبل و جوجل بلاي
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          يف تشكلت الفكرة؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body" dir="rtl">
+                                عانينا جميعا من مشكلات التواصل في المدرسة أو كطلبة في وقت ما في حياتنا، ففكرنا انه قد حان الوقت لفعل شيئا بهذا الصدد. تغير التكنولوجيا العالم وتعزز من تجاربنا، فكرنا بتصميم أداة تضيف على التعليم وتجعله ممتعاً عبر:
+                                <ul style="margin-top:20px;">
+                                    <li>التواصل الفوري</li>
+                                    <li>المشاركة</li>
+                                    <li>التفاعل</li>
+                                    <li>والمحتوى الرئيسي وهو المتعة!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          ماذا استخدم ماي يو؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body" dir="rtl">
+                                ماي يو هو اسهل واسرع ووسيلة للتواصل في أي مؤسسة تعليمية، يمنحك طريقة تواصل رسمية مع أعضاء المدرسة في الدائرة المدرسية بالإضافة الى تشجيع تفاعل و مشاركة الطلبة.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          هل سيسبب عبئاً على المعلمين؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body" dir="rtl">
+                                على الاطلاق! صمم ماي يو بهدف تبسيط عملية التواصل ليسهل على المعلمين القيام بمهامهم اليومية. يمكن للمعلمين ان يتحكموا في نظام الاشعارات بسهولة حسب متطلباتهم وأيضا متى وكيف يودون التواصل عبر ماي يو.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+         ما هي الخدمات الأخرى التي تتوافق مع التطبيق؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body" dir="rtl">
+                                التطبيق حاليا مقترن بتويتر وفيسبوك، يمكنك مشاركة حسابك مع زملائك وطلبتك وأكثر من ذلك بكثير!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          كيف نقوم بشراكتكم؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body" dir="rtl">
+                                ان كنتم احدى الشركات التي تود القيام بشراكة معنا كل ما عليكم فعله هو التواصل معنا على <a href="mailto:info@myu.co">info@myu.co</a> </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEight">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          لدي مشكلة تختص بالدعم الفني واحتاج حلها، مع من اتواصل؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                            <div class="panel-body" dir="rtl">
+                                من الأفضل التواصل مع فريق الدعم الفني على <a href="mailto:info@myu.co">info@myu.co</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingNine">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          كيف تعمل الخصوصية؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                            <div class="panel-body" dir="rtl">
+                                تواصلك على ماي يو خاص وآمن كلياً، الرسائل الخاصة من طرف الى الآخر مشفرة وليس هناك أي حاجة لمشاركة رقمك الخاص مع الطلبة اثناء استخدام ماي يو
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          من يمكنه رؤية حسابي؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                            <div class="panel-body" dir="rtl">
+                                إذا كنت مسجل كطالب، فقط الطلبة والمعلمين المسجلين في مدرستك او جامعتك يمكنهم رؤية حسابك. أما إذا كنت مسجل كعضو هيئة تدريس فيمكن للجميع رؤية حسابك والبحث عنك عن طريق اسم المستخدم الخاص بك.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEleven">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">         
+		ما هي البوردات؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                            <div class="panel-body" dir="rtl">
+                                البوردات مماثلة للمجموعات التي يمكنك تخصيصها حسب رغبتك، سواء مثلت مجموعة من المعلمين او الصفوف التي تدرسها. أضف البوردات واختار الخصوصية التي تفضل ان كان عام او خاص وتمتع بالتواصل مع أعضاء البوردات الخاصة بك.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwelve">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+         كيف يمكنني كتابة وارسال الإعلانات على ماي يو؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                            <div class="panel-body" dir="rtl">
+                                من صفحة الاخبار اضغط على زر النشر، قم بكتابة محتوى الاعلان یمكنك اضافة الصور والملفات الصوتیة، ثم اختر البورد الذي تود الارسال له، للاعلانات العامة قم باختيار عام، للاعلانات الخاصة لأعضاء احدى البوردات, اختر البورد ثم اضغط على ارسل.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThirteen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+        هل يمكنني ارسال الملفات؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                            <div class="panel-body" dir="rtl">
+                                حاليا يمكنك ارسال الصور والرسائل الصوتية اما بالنسبة لإرسال الملفات فسيتوفر في التحديث القادم للتطبيق.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFourteen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+        كيف يمكن للطلبة والمعلمين متابعتي على ماي يو؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                            <div class="panel-body" dir="rtl">
+                                بعد انشاء حسابك الخاص سيكون لديك اسم مستخدم خاص بك، والذي يمكنك مشاركته مع أي مستخدم للبحث عنك ومتابعتك
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFifteen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+        هل يمكنني ارسال الروابط لطلبتي؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                            <div class="panel-body" dir="rtl">
+                                نعم! التطبيق متوافق مع الروابط، يمكنك ارسال أي رابط ان كان رابط ملف في دروب بوكس، صفحة الكترونية او حتى الفيديو على يوتيوب
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSixteen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+        كيف يمكنني الانضمام الى الصفوف؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                            <div class="panel-body" dir="rtl">
+                                بسيطة، ابحث عن معلمك ثم اختر الانضمام الى البورد الذي يحمل اسم الصف الذي تنتمي اليه. ان كان البورد عام ستقوم بالانضمام واستلام الإعلانات والاخبار فورا، اما ان كان خاص فستنتظر ان يقبل معلمك وبعدها تستلم الاخبار الخاصة بالبورد
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeventeen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+        كيف يمكنني التحكم في الاشعارات؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+                            <div class="panel-body" dir="rtl">
+                                اذهب الى حسابك، اضغط على الاعدادات وقم بالتحكم في اشعاراتك حسب رغبتك.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEighteen">
+                            <h4 class="panel-title" dir="rtl">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+        هل التطبيق متوفر عبر الانترنت؟
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
+                            <div class="panel-body" dir="rtl">
+                                نقوم حاليا بالعمل على النسخة الجديدة من التطبيق والتي ستحتوي على تصميم جيد و الذي يحوي شكل افضل و عملي اكثر عن طريق توفره على الانترنت.
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="myu_footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="https://twitter.com/MyU_app" target="_blank" class="margin_l30"><img src="images/twitter-logo-silhouette.svg" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/myuappsocial" target="_blank" class="margin_l30"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/myu_app/" target="_blank" class="margin_l30"><img src="images/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC6L-ghpIIDeHxSjgaO-4QmA" target="_blank" class="margin_l30"><img src="images/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="footer_links">
+                            <a href="faqs.html" dir="rtl">الأسئلة الأكثر شيوعا</a> |
+                            <a href="temsofservice.html" dir="rtl">شروط الخدمة</a> |
+                            <a href="privacypolicy.html" dir="rtl">سياسة الخصوصية</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy_text" dir="rtl">ماي يو &copy; حقوق التأليف والنشر 2016 | كل الحقوق محفوظة</div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 400) {
+                $(".navbar_wrapper").addClass("not_transparent");
+            } else {
+                $(".navbar_wrapper").removeClass("not_transparent");
+            }
+        });
+
+        $(document).ready(function() {
+            $('nav a[href^="#"]').on('click', function(e) {
+                var target = this.hash;
+                var $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        $('.inner_page_section .panel-title a').on('click', function() {
+            $('a.collapsed').removeClass('collapsed');
+            $(this).addClass('collapsed');
+        });
+    </script>
+
+    <title>myU</title>
+</head>
+
+<body>
+    <div class="navbar_wrapper bg_color navbar_fixed_top">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="index.html"><img class="" src="images/logo_myu.png" alt="myU"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#aboutapp">ABOUT APP<span class="sr-only">(current)</span></a></li>
+                            <li><a href="index.html#testimonial">TESTIMONIALS</a></li>
+                            <li><a href="index.html#contactus">CONTACT US</a></li>
+                        </ul>
+                        <!--<span class="lang_link"> <a href="http://qa-cms.myu.co/myu/ar/">العربية</a></span>-->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/" style="font-size:18px !important;">العربية</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <h1>ABOUT US</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_page_section">
+        <div class="container">
+            <div class="row">
+                <h1>About Us</h1>
+
+                <div class="text_block" style="height : 350px">
+		<p><strong>myU</strong> is a school communication and announcement tool. It acts as an internal social network for each school composed of students, faculty members, clubs and organizations. The app makes it easy to connect with anyone in the school community, and makes communications real-time and sharing fun.</p>
+
+		<p>myU is ideal for a faculty member wanting to send a class announcement to students, an organization looking to promote its events and activities, or a student looking to ask about a missing homework, an exam date or to speak their mind to their peers at school.</p>
+
+		<p>myU is a smartphone app that runs on iOS device, and acts as a third party cloud based service. The technology requires no integration with the school’s systems.</p>
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+    <footer class="myu_footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="https://twitter.com/MyU_app" target="_blank" class="margin_l30"><img src="images/twitter-logo-silhouette.svg" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/myuappsocial" target="_blank" class="margin_l30"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/myu_app/" target="_blank" class="margin_l30"><img src="images/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC6L-ghpIIDeHxSjgaO-4QmA" target="_blank" class="margin_l30"><img src="images/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="footer_links">
+			    <a href="aboutus.html">ABOUT US</a> |
+                            <a href="faqs.html">FAQS</a> |
+                            <a href="temsofservice.html">TERMS OF SERVICE</a> |
+                            <a href="privacypolicy.html">PRIVACY POLICY</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy_text">MyU &copy; Copyright 2016 | All Rights</div>
+        </div>
+    </footer>
+</body>
+
+</html>

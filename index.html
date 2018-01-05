@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 600) {
+                $(".navbar_wrapper").addClass("not_transparent");
+            } else {
+                $(".navbar_wrapper").removeClass("not_transparent");
+            }
+        });
+
+
+        $(document).ready(function() {
+            $('nav a[href^="#"]').on('click', function(e) {
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+
+        $(document).ready(function() {
+            //$( this ).toggleClass( "smalldevice_visible" ); 
+            $(".smalldevice_visible").show();
+        });
+    </script>
+    <title>myU</title>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+    <div class="navbar_wrapper bg_color navbar_fixed_top">
+        <div class="container">
+            <nav class="navbar" id="myScrollspy">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html"><img class="" src="images/logo_myu.png" alt="myU"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#contactus">اتصل بنا </a></li>
+                        <li><a href="#testimonial">الشهادات </a></li>
+                        <li><a href="#aboutapp">عن التطبيق <span class="sr-only">(current)</span></a></li>
+                    </ul>
+
+                    <!--<span class="lang_link"> <a href="http://qa-cms.myu.co/myu/en/">English</a></span>-->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/en/">English</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"> <img class="first-slide" src="images/main-pic-for-landing.png" alt="slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 dir="rtl">تواصل بسهولة مع دائرتك الدراسية</h1>
+                        <p dir="rtl">أرسل إعلانات موادك لطلبتك مجانا</p>
+                        <p class="store_buttons">
+                            <a href="https://itunes.apple.com/app/myu-app/id740372863?mt=8" target="_blank" role="button"><img src="images/app_store.png"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.myu.android" target="_blank" role="button"><img src="images/play_store.png"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutapp"></div><br>
+    <br><br><br>
+    <div class="whatis_myu">
+        <div class="circle_line_myU_text"><img src="images/circle_1.svg"></div>
+        <div class="container">
+            <div class="row">
+                <h1 dir="rtl"><img src="images/section-icon.svg"> ما هو ماي يو؟</h1>
+                <p class="myU_text" dir="rtl"> ماي يو تطبيق للموبايل يوفر على المعلمين الوقت والجهد اليومي الذي يمرون به اثناء تواصلهم مع الطلبة، ويمنحهم وطلبتهم أداة مجانية بسيطة يمكنهم من خلالها التواصل بشكل فوري وسريع.
+                </p>
+                <div class="text-right"><img src="images/what_is_myU_arabic.png" style="width:88%;" /></div>
+            </div>
+        </div>
+        <div class="circle_line_myU_text_bottom"><img src="images/circle_2.svg"></div>
+    </div>
+    <hr class="divider_line" />
+
+
+    <div class="end_email_section">
+        <div class="container">
+            <div class="row">
+                <h1 dir="rtl"><img src="images/section_icon_messages.svg"> قل وداعا للرسائل الضائعة و الإيميلات الغير مقروءة</h1>
+                <!--<p class="end_email_text">No more chasing during school hours via e-mail or calls.</p>-->
+                <!--<div class="email_description">
+      <h4>Instancy </h4>
+      <h5>No more chasing during school hours via e-mail or calls</h5>
+      <p><strong>Communicate Instantly :</strong> Send real-time simple messages to your school group or a single person</p>
+      <p>Attach photos and voice notes to your messages</p>
+      <br>
+      
+      <h4>Reach </h4> 
+      <p><strong>Reach everyone at once :</strong> Send announcements and notifications to any mobile at any time in Arabic and English</p>
+       <br>
+       
+      <h4>Privacy </h4>
+      <h5>Choose your privacy preference</h5>
+      <p>Connect with everyone in your school community without the need to share your phone number</p>
+      <p>Manage the privacy of your boards, posts or notifications</p>
+      <br><br>
+      </div>-->
+
+                <div class="text-center end_email_image"> <img src="images/the_end_to_unreachable_messages.svg" /> <span class="text_student" dir="rtl">طالب</span> <span class="text_educator" dir="rtl">معلم</span> <span class="text_parent" dir="rtl">ولي أمر</span> <span class="text_clubnddept"
+                        dir="rtl">نادي أو قسم</span> </div>
+            </div>
+        </div>
+    </div>
+    <hr class="divider_line" />
+    <div class="seehow_section">
+        <div class="container">
+            <div class="row">
+                <h1 dir="rtl"><img src="images/see_how_myU_can_halp_you.svg"> كيف يمكن لماي يو ان يساعدك؟</h1>
+                <div class="col-sm-4 col-md-4">
+                    <div class="student_block">
+                        <div class="stud_hover_box">
+                            <h1 dir="rtl">طالب</h1>
+                            <p dir="rtl">استقبل اعلانات موادك بسهولة على موبايلك و تواصل مع مدرسينك والأندية الطلابية اللي تحبها</p>
+                        </div>
+                        <div class="student_box"> <img src="images/student_illustration.svg">
+                            <p dir="rtl">طالب</p>
+                        </div>
+                    </div>
+                    <div class="clubordept_block">
+                        <div class="clubordept_hover_box">
+                            <h1 dir="rtl">نادي أو قسم</h1>
+                            <p dir="rtl" style="font-size:18px; font-weight:500;">تمكن من الوصول لأكبر عدد من الطلبة، وتواصل معهم بسرعة للإعلان عن الاخبار، الفعاليات والنشاطات الخاصة بناديك أو قسمك</p>
+                        </div>
+                        <div class="clubordept_box"> <img src="images/club_dep_illustration.svg">
+                            <p dir="rtl">نادي أو قسم</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="educatordept_block">
+                        <div class="educatordept_hover_box">
+                            <h1 dir="rtl">معلم</h1>
+                            <p dir="rtl">أرسل إعلانات موادك للطلبة بسهولة، ناقشهم في المواضيع المهمة. ما في وقت للكتابة؟ شاركهم تعليماتك في رسالة صوتية او صورة.</p>
+                        </div>
+                        <div class="educatordept_box"> <img src="images/professor_illustration.svg">
+                            <p dir="rtl">معلم</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="parent_block">
+                        <div class="parent_hover_box">
+                            <h1 dir="rtl">ولي أمر</h1>
+                            <p dir="rtl">تابع أداء طفلك بأقل مجهود، استلم الاخبار والإعلانات المهمة من إدارة المدرسة والمعلمين</p>
+                        </div>
+                        <div class="parent_box"> <img src="images/parent_illustration.svg">
+                            <p dir="rtl">ولي أمر</p>
+                        </div>
+                    </div>
+                    <div class="institution_block">
+                        <div class="institution_hover_box">
+                            <h1 dir="rtl">مؤسسة تعليمية</h1>
+                            <p dir="rtl">استلم لوحة التحكم الخاصة بمدرستك او جامعتك، اطلع على التحليلات، بالإضافة الى إدارة قاعدة البيانات الخاصة بك.</p>
+                        </div>
+                        <div class="institution_box"> <img src="images/instituts_illustration.svg">
+                            <p dir="rtl">مؤسسة تعليمية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonial"></div><br>
+    <br>
+
+    <hr class="divider_line" />
+    <div class="testimonial_section">
+        <div class="testimonial_fly_right"><img src="images/fly_testimonials.svg"></div>
+        <div class="container">
+            <div class="row">
+                <h1 dir="rtl"><img src="images/section_icon_user_testimonials.svg"> شهادات المستخدمين</h1>
+                <div id="carousel_testimonials" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel_testimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel_testimonials" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="testimonial_box">
+                                    <div class="adjust1">
+                                        <div class="col-md-4 col-sm-4 col-xs-12"> <img class="media-object img-rounded img-responsive" src="images/professor_testimonials.svg" style="max-width:95%;"> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <div class="caption">
+                                                <p class="testimonial_quote" dir="rtl">"يعتبر التطبيق جهة التواصل الأساسية بين المعلم والطالب خارج الصفوف الدراسية في جامعة الكويت والمؤسسات التعليمية الأخرى"</p>
+                                                <p class="testimonial_username" dir="rtl">الأستاذة هالة السمار</p>
+                                                <p class="testimonial_department" dir="rtl">معلمة في قسم اللغة الإنجليزية بجامعة الكويت</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="testimonial_box">
+                                    <div class="adjust1">
+                                        <div class="col-md-4 col-sm-4 col-xs-12"> <img class="media-object img-rounded img-responsive" src="images/dr_stub.svg" style="max-width:95%;"> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <div class="caption">
+                                                <p class="testimonial_quote" dir="rtl">"ماي يو تطبيق رائع! التواصل مع طلبتي أصبح أكثر فعالية الآن"</p>
+                                                <p class="testimonial_username" dir="rtl">د.فهد الزميع</p>
+                                                <p class="testimonial_department" dir="rtl">أستاذ القانون التجاري في جامعة الخليج للعلوم والتكنولوجيا</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+
+                    <a class="left carousel-control" href="#carousel_testimonials" role="button" data-slide="prev"> <span aria-hidden="true"> 
+         </span> <span class="sr-only">Previous</span> </a>
+                    <a class="right carousel-control" href="#carousel_testimonials" role="button" data-slide="next"> <span aria-hidden="true"> 
+        </span> <span class="sr-only">Next</span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="divider_line" id="contactus" />
+    <div class="contactus_section">
+        <div class="contact_fly_left"><img src="images/fly_comtact_us.svg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="contact_block">
+                    <div class="contact_circle_left"><img src="images/circle_2.svg"></div>
+                    <div class="contact_block_inner">
+                        <h1 dir="rtl"><img src="images/icon_section_contact_us.svg"> اتصل بنا</h1>
+                        <div class="thanks_message" style="display:none;">
+                            <h3 dir="rtl">شكرا!</h3>
+
+                            <p dir="rtl">تم إرسال رسالتك بنجاح. سوف نتصل بك في وقت قريب جدا!</p>
+                        </div>
+                        <form id="contactUsForm" onsubmit="return submitForm()">
+                            <div class="form-group">
+                                <input type="text" class="form-control text_box" placeholder="الاسم" id="userName" dir="rtl" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control text_box" placeholder="البريد الالكتروني" id="userEmail" dir="rtl" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control text_box" placeholder="الموضوع" dir="rtl" id="userSubject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control text_box" rows="" placeholder="الرسالة" dir="rtl" id="userMessage" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default btnsend" id="contact" style="float:right;">إرسال</button>
+                        </form>
+                    </div>
+                    <div class="contact_circle_right"><img src="images/circle_6.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="myu_footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="https://twitter.com/MyU_app" target="_blank" class="margin_l30"><img src="images/twitter-logo-silhouette.svg" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/myuappsocial" target="_blank" class="margin_l30"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/myu_app/" target="_blank" class="margin_l30"><img src="images/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC6L-ghpIIDeHxSjgaO-4QmA" target="_blank" class="margin_l30"><img src="images/youtube.svg" alt="Youtube"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="footer_links">
+                            <a href="faqs.html" dir="rtl">الأسئلة الأكثر شيوعا</a> |
+                            <a href="temsofservice.html" dir="rtl">شروط الخدمة</a> |
+                            <a href="privacypolicy.html" dir="rtl">سياسة الخصوصية</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy_text" dir="rtl">ماي يو &copy; حقوق التأليف والنشر 2016 | كل الحقوق محفوظة</div>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm() {
+
+            var name = $("#userName").val();
+            var email = $("#userEmail").val();
+            var subject = $("#userSubject").val();
+            var message = $("#userMessage").val();
+            $("#contact").prop("disabled", true);
+            // var name  = "jitendra";
+            //            var email = "jd.aligarh@gmail.com";
+            //            var subject = "Goal";
+            //            var message  = "Hi Jitendra "; 
+
+            $.ajax({
+                type: "POST",
+                url: "http://beta-cms.myu.co/web/contact_us/mail_sender",
+                data: "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message + "",
+
+                success: function(data) {
+                    //alert(html);
+                    //alert(data)
+                    $("#contact").prop("disabled", false);
+                    document.getElementById("contactUsForm").reset();
+                    $(".thanks_message").show(1000);
+                },
+                error: function(err) {
+                    $("#contact").prop("disabled", false);
+                    alert(err);
+                }
+
+            });
+            return false;
+        }
+    </script>
+</body>
+
+</html>
